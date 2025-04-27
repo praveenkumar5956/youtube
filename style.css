@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 10px;
+  /* background-color: rgba(44, 29, 29, 0.149); */
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.logo-ele {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.logo-name {
+  font-size: 20px;
+  color: rgba(4, 1, 1, 0.718);
+}
+.search-element {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  background-color: rgba(192, 191, 191, 0.136);
+  padding: 0px 20px 0px 0px;
+}
+.search {
+  width: 550px;
+  border-radius: 20px 0px 0px 20px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid lightgray;
+}
+
+.search:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 1px 1px 1px rgba(0, 0, 255, 0.204) inset;
+}
+.nav-middle {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 40px;
+}
+.mic {
+  background-color: rgba(192, 191, 191, 0.136);
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.mic-ele {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 40px;
+}
+
+.signin-btn {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  align-items: center;
+  margin-right: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+.btn-name {
+  font-size: 15px;
+  color: blue;
+  font-weight: 500;
+}
+/* main body */
+.main {
+  display: flex;
+  margin: 20px 0px;
+  /* overflow: hidden; */
+}
+
+.sidebar {
+  height: 1100px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px 10px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.sidebar-btn:hover {
+  background-color: rgba(211, 211, 211, 0.486);
+}
+.sidebar-btn-name {
+  font-size: 18px;
+}
+.active {
+  background-color: rgba(211, 211, 211, 0.486);
+}
+.line {
+  margin: 10px 0px;
+  border-top: 1px solid lightgray;
+}
+.sign-info {
+  width: 180px;
+  border: none;
+  margin: 10px auto;
+}
+.desc {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.explore {
+  margin: 0px 10px;
+}
+
+.content {
+  width: 1260px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  margin: 0px 10px;
+}
+.content::-webkit-scrollbar {
+  margin-left: 5px;
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: rgba(211, 211, 211, 0.486);
+  border-radius: 4px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-btn {
+  font-size: 18px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+.active-black {
+  background-color: black;
+  color: white;
+}
+.videos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.video-card {
+  width: 400px;
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.286); */
+}
+.video-img-parent {
+  position: relative;
+}
+.video-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+.channel {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.451);
+  padding: 2px 3px;
+}
+.channel-data {
+  display: flex;
+  gap: 10px;
+}
+.channel-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* Shorts content */
+
+.shorts-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.short-card {
+  width: 240px;
+  height: 300px;
+  padding: 5px;
+}
+.short-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.short-desc {
+  font-size: 18px;
+}
+.shorts-heading {
+  font-size: 20px;
+  margin: 10px 20px;
+}
+.shorts-header {
+  display: flex;
+
+  align-items: center;
+}
